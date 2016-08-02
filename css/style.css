@@ -1,0 +1,29 @@
+body {
+    padding-top: 5rem;
+    background-color: #232323;
+}
+
+.bg-inverse {
+    background-color: #000000;
+}
+
+.shadow{
+    box-shadow: 0px 0px 15px #000;
+}
+
+.stream {
+    border: solid 3px #333333;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.stream:hover {
+    border: solid 2px #d4d4d4;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+.stream-active{
+    border: 1px solid #ffffff;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
