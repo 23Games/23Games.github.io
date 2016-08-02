@@ -23,10 +23,10 @@
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
     <a class="navbar-brand" href="#">23GAMES</a>
     <ul class="nav navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
             <a class="nav-link" href="stream.html">Streamy</a>
         </li>
         <li class="nav-item">
@@ -40,45 +40,18 @@
 
 <div class="container">
 
-    <div class="row">
-        <div class="col-md-6 frame bigbox">
-            <div class="whitebox shadow">
-                <img src="https://i.ytimg.com/vi/aDMsGl_XxTk/maxresdefault.jpg">
-            </div>
-        </div>
-        <div class="col-md-6 frame ">
-            <div class="row m-l--05">
-                <div class="col-md-6 frame box">
-                    <div class="whitebox shadow">
-                        <img src="https://i.ytimg.com/vi/aDMsGl_XxTk/maxresdefault.jpg">
-                    </div>
-                </div>
-                <div class="col-md-6 frame box">
-                    <div class="whitebox shadow">
-                        <img src="https://i.ytimg.com/vi/aDMsGl_XxTk/maxresdefault.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="row m-l--05">
-                <div class="col-md-12 frame box p-t-1">
-                    <div class="whitebox shadow">
-                        <img src="https://i.ytimg.com/vi/aDMsGl_XxTk/maxresdefault.jpg">
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 p-b-1">
+                <div class="embed-responsive embed-responsive-16by9 shadow">
+                    <iframe id="topstream" class="embed-responsive-item"
+                            src="http://player.twitch.tv/?channel=monstercat&html5=true"></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row p-t-1">
-        <div class="col-md-8 frame smallbox">
-            <div class="whitebox shadow">
-                <img src="https://i.ytimg.com/vi/aDMsGl_XxTk/maxresdefault.jpg">
-            </div>
-        </div>
-        <div class="col-md-4 frame smallbox" style="padding-right: 0;">
-            <div class="whitebox shadow">
-                <img src="https://i.ytimg.com/vi/aDMsGl_XxTk/maxresdefault.jpg">
-            </div>
-        </div>
+    <div id="streams-container">
+
     </div>
 
 </div><!-- /.container -->

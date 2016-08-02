@@ -27,3 +27,43 @@ body {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
+.m-l--05{
+    margin-left: -0.5rem !important;
+}
+
+.frame{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.whitebox{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    -webkit-transition: all 2s ease; /* For Safari 3.1 to 6.0 */
+    transition: all 2s ease;
+}
+.whitebox:hover{
+    border-color: #44e020;
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+.whitebox img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.bigbox{
+    height: 600px;
+}
+.box{
+    height: 300px;
+}
+.smallbox{
+    height: 150px;
+}
