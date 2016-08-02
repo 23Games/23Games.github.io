@@ -54,6 +54,7 @@ body {
     filter: grayscale(100%);
     -webkit-transition: all 2s ease; /* For Safari 3.1 to 6.0 */
     transition: all 2s ease;
+    text-align: center;
 }
 .whitebox:hover{
     border-color: #44e020;
@@ -61,7 +62,7 @@ body {
     filter: grayscale(0%);
 }
 .whitebox img{
-    width: 100%;
+    width: auto;
     height: 100%;
 
 }
