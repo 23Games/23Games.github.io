@@ -3,8 +3,16 @@ body {
     background-color: #232323;
 }
 
+@font-face {
+    font-family: 'pixel'; /*a name to be used later*/
+    src: url('../8-BIT WONDER.TTF'); /*URL to font*/
+}
+
 .bg-inverse {
     background-color: #000000;
+}
+.navbar-brand{
+    font-family: pixel;
 }
 
 .shadow{
