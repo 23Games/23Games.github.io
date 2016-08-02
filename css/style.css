@@ -47,32 +47,33 @@ body {
 
 .whitebox{
     background-color: #000;
-    width: 100%;
-    height: 100%;
     border: 1px solid #000000;
+    overflow: hidden;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
     -webkit-transition: all 2s ease; /* For Safari 3.1 to 6.0 */
     transition: all 2s ease;
     text-align: center;
+
 }
 .whitebox:hover{
     border-color: #44e020;
     -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
     filter: grayscale(0%);
+    overflow: hidden;
 }
-.whitebox img{
+/*.whitebox img{
     width: auto;
     height: 100%;
 
-}
+}*/
 
 .bigbox{
-    height: 600px;
+    max-height: 600px;
 }
 .box{
-    height: 300px;
+    max-height: 292px;
 }
 .smallbox{
-    height: 150px;
+    max-height: 150px;
 }
