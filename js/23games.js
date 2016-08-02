@@ -1,4 +1,4 @@
-var u_twitch = "kagaminium,witekm,byakogan_tv,otlet,shuzi";
+var u_twitch = "monstercat,kagaminium,witekm,byakogan_tv,otlet,shuzi";
 var limit = 6;
 getTwitch(u_twitch);
 
@@ -13,7 +13,7 @@ function getTwitch(stream) {
             setTimeout(function () {
                 $('#image' + channel["streams"][0]["channel"]["name"]).addClass("stream-active");
             }, 3000);
-            for (var i = 0; i < limit; i++) {
+            for (var i = 0; i < limit ; i++) {
                 renderBottomStreamList(channel["streams"][i]);
             }
         }, error: function () {
