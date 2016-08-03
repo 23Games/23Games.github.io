@@ -30,7 +30,7 @@ function renderBottomStreamList(channel) {
 
 function topStream(channel, type) {
     if (channel != null && type === 1) {
-        $('#topstream').hide().attr('src', "http://player.twitch.tv/?html5=true&channel=" + channel["channel"]["name"]).fadeIn(1000);
+        $('#topstream').hide().attr('src', "https://player.twitch.tv/?html5=true&channel=" + channel["channel"]["name"]).fadeIn(1000);
         return 0;
     }
     $.ajax({
