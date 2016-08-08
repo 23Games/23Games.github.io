@@ -16,10 +16,20 @@ body {
 }
 .navbar-toggler {
     border: 1px solid;
+    float: right;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .shadow{
     box-shadow: 0px 0px 15px #000;
+}
+
+.mobile{
+    padding-bottom: 1rem;
+}
+.mobile img{
+    margin: auto;
 }
 
 .stream {
@@ -84,4 +94,38 @@ body {
 }
 .text-c-white{
     color: #ffffff;
+}
+
+.social{
+    color: #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+.social a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.social:first-child{
+    border-left: none;
+}
+.social:last-child{
+    border-right: none;
+}
+
+.facebook{
+    color: #4867aa;
+    font-size: 0.8rem;
+}
+
+.youtube{
+    color: #e62117;
+    font-size: 0.8rem;
+}
+.twitter{
+    color: #00aced;
+    font-size: 0.8rem;
+}
+.google{
+    color: #fbbc05;
+    font-size: 0.8rem;
 }
