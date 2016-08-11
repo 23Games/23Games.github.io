@@ -7,6 +7,9 @@ body {
     font-family: 'pixel'; /*a name to be used later*/
     src: url('../8-BIT WONDER.TTF'); /*URL to font*/
 }
+.pixel{
+    font-family: pixel;
+}
 
 *{
     color: #ffffff;
