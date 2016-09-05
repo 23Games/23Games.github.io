@@ -1,4 +1,4 @@
-var u_twitch = "monstercat,kagaminium,witekm,byakogan_tv,otlet,shuzi";
+var u_twitch = "monstercat,kagaminium,witekm,byakogan_tv,otlet,shuzi,itskocyk";
 var limit = 6;
 getTwitch(u_twitch);
 
