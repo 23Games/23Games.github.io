@@ -28,7 +28,7 @@ function getTwitch(stream) {
 function renderBottomStreamList(channel) {
     var name = channel["channel"]["name"];
     $("#streams-container").append('<div class="col-sm-4 text-md-center" id="' + name + '"></div>');
-    $("#" + name).html('<img class="shadow" onclick="topStream(\'' + name + '\',0)" class="img-fluid stream" src="https://static-cdn.jtvnw.net/previews-ttv/live_user_' + name + '-320x180.jpg" id="image' + name + '" alt="' + name + '">');
+    $("#" + name).html('<img class="shadow stream" onclick="topStream(\'' + name + '\',0)" class="img-fluid stream" src="https://static-cdn.jtvnw.net/previews-ttv/live_user_' + name + '-320x180.jpg" id="image' + name + '" alt="' + name + '">');
 }
 
 function topStream(channel, type) {
@@ -37,8 +37,11 @@ function topStream(channel, type) {
         return 0;
     }
     $.ajax({
+        type: 'GET',
         url: 'https://api.twitch.tv/kraken/streams/?channel=' + channel,
-        dataType: 'jsonp',
+        headers: {
+            'Client-ID': 'dd80eugsisvxdq2h689e6m8e3tqqzuw'
+        },
         success: function (channel) {
             $('.stream-active').addClass('stream').removeClass('stream-active');
             $('#image' + channel["streams"][0]["channel"]["name"]).addClass("stream-active");
