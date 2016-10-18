@@ -5,8 +5,11 @@ getTwitch(u_twitch);
 
 function getTwitch(stream) {
     $.ajax({
+        type: 'GET',
         url: 'https://api.twitch.tv/kraken/streams/?channel=' + stream,
-        dataType: 'jsonp',
+        headers: {
+            'Client-ID': 'dd80eugsisvxdq2h689e6m8e3tqqzuw'
+        },
         success: function (channel) {
             $('#loading').remove();
             topStream(channel["streams"][0], 1);
